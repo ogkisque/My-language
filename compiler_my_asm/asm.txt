@@ -1,0 +1,46 @@
+jmp main
+
+:func0
+pop [0]
+push [0]
+push 1
+jne if0
+push [0]
+ret
+:if0
+push [0]
+push 1
+jbe if1
+push [0]
+push [0]
+push 1
+sub
+call func0
+mul
+pop [1]
+push [1]
+ret
+:if1
+
+:main
+push 8
+pop [2]
+push 10000
+pop [3]
+:while0
+push [3]
+push 0
+jbe end_while0
+push [2]
+call func0
+pop [4]
+push [3]
+push 1
+sub
+pop [3]
+jmp while0
+:end_while0
+push [4]
+out
+
+hlt

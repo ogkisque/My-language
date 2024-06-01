@@ -1,0 +1,24 @@
+houmi factorial (num)
+lesss_go
+    fact aka 1;
+    
+    smoke (num > 1)
+    lesss_go
+        fact aka fact * num;
+        num aka num - 1;
+    stop_that_shit
+    
+    glock (fact);
+stop_that_shit
+
+x aka 8;
+count aka 10000;
+fact aka 1;
+
+smoke (count > 0)
+lesss_go
+    fact aka factorial (x);
+    count aka count - 1;
+stop_that_shit
+
+freestyle (fact);
